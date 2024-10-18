@@ -3,16 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Sécurisée</title>
+    <title>Bureau Sécurisé</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="secure-container">
-        <div class="secure-box">
-            <h2>Bienvenue !</h2>
-            <p>Vous avez accédé à la page sécurisée.</p>
+    <div class="desktop-container">
+        <!-- Barre des tâches -->
+        <div class="taskbar">
+            <div class="taskbar-icons">
+                <img src="icons/folder-icon.png" alt="Dossier" class="taskbar-icon">
+                <img src="icons/browser-icon.png" alt="Navigateur" class="taskbar-icon">
+                <img src="icons/settings-icon.png" alt="Paramètres" class="taskbar-icon">
+            </div>
+            <div class="taskbar-time">
+                <p id="current-time"></p>
+            </div>
+        </div>
+
+        <!-- Icônes sur le bureau -->
+        <div class="desktop-icons">
+            <div class="desktop-icon">
+                <img src="icons/IconGasterFolder64x64.png" alt="Dossier de Gaster">
+                <p>Gaster Folder</p>
+            </div>
+            <div class="desktop-icon">
+                <img src="icons/IconLilleyFolder64x64.png" alt="Dossier de Lilley">
+                <p>Lilley Folder</p>
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

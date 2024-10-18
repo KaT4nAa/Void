@@ -10,4 +10,14 @@ document.getElementById('passwordForm').addEventListener('submit', function(even
     } else {
         document.getElementById('error-message').textContent = 'Mot de passe incorrect.';
     }
+
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        document.getElementById('current-time').textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+
 });
